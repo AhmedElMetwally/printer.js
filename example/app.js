@@ -7,10 +7,10 @@ const app = express();
 /**************************************************
  *  import printer
  **************************************************/
-const Printer = require('./../lib/printer');
+const Printer = require('./lib/printer.js');
 
 
-app.listen( process.env.PORT || '3000' , () => {
+app.listen( 8080 , () => {
 
  /**************************************************
   *  use printer
@@ -23,10 +23,8 @@ app.listen( process.env.PORT || '3000' , () => {
 });
 
 
-// serve lib 
-app.use('/lib' , express.static(path.join(__dirname, '../lib')))
+app.use('/' , express.static(path.join(__dirname, 'public')))
 
-// sent html file
-app.use( '/' ,function(req, res) {
-  res.sendFile(path.join(__dirname, '../front-end/index.html'));
-});
+
+module.exports = app;
+

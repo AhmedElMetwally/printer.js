@@ -264,13 +264,13 @@ class Printer
 
 // window : to can use Printer in any page in front end 
 // module.exports : to can use Printer in any page who is import in nodejs -> like ./server.js
-(function(w){
-    if(w === "undefined"){
+(function(){
+    if(typeof window === "undefined"){
         // nodejs
         module.exports = Printer;
     }else{
         // javascript
         window.Printer = Printer;
     }
-}(typeof window));
+}());
 

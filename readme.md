@@ -7,14 +7,18 @@ $ git clone https://github.com/AhmedElMetwally/printer.js.git printerJs
 ```bash
 $ cd server && npm install && npm start
 ```
-### open http://localhost:3000
+### open http://localhost:8080
+
+
+<hr>
+
 
 ## To Use PrinterJS in Front End
 
 ### Import printer.js In HTML
 
 ```bash
-<script src="/lib/printer.js"></script>
+<script src="./libraries/printer.js"></script>
 ```
 
 ### Use Printer Class
@@ -32,15 +36,16 @@ $ cd server && npm install && npm start
 ```
 ![alt Front End image](https://i.imgur.com/YGGLvvc.png)
  
-
-
  
-## To Use PrinterJS in Back End
+<hr>
+
+
+## To Use PrinterJS in NodeJs
 
 ### Import printer.js In js File
 
 ```bash
-const Printer = require('./../lib/printer');
+const Printer = require('./libraries/printer');
 ```
 
 ### Use Printer Class
@@ -57,6 +62,7 @@ const Printer = require('./../lib/printer');
     }());
 ```
 
-![alt Back End image](https://i.imgur.com/L5R0bci.png)
+![alt Back End image](https://i.imgur.com/bKcbw1c.png)
 
+<hr>
  
