@@ -5,7 +5,7 @@ $ git clone https://github.com/AhmedElMetwally/printer.js.git printerJs
 ## Quick example
 
 ```bash
-$ cd server && npm install && npm start
+$ cd printerJs/example && npm install && npm start
 ```
 ### open http://localhost:8080
 
